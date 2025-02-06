@@ -66,6 +66,7 @@ def main():
         compfinal = computer_hand[0]
     elif compfinalnum == 2:
         compfinal = computer_hand[1]
+    find_winner(playerfinal,compfinal,player_score,comp_score)
 
 
 def find_winner(playerfinal,compfinal,player_score,comp_score):
@@ -80,5 +81,5 @@ def find_winner(playerfinal,compfinal,player_score,comp_score):
     print("Hello")
 
 main()
-find_winner(playerfinal,compfinal,player_score,comp_score)
+
 
