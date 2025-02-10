@@ -21,3 +21,12 @@ for row in range(len(populations)):
     for column in range(len(populations[0])):
         print(f"{populations[row][column]:<20}",end="")
     print()
+
+# column totals
+yearly_population_totals = []
+for column in range(len(populations[0])):
+    sum = 0
+    for row in range(len(populations)):
+        sum = sum + populations[row][column]
+    yearly_population_totals.append(sum)
+print(f"{"Total":<20}{yearly_population_totals[0]:<20}{yearly_population_totals[1]:<20}{yearly_population_totals[2]:<20}{yearly_population_totals[3]:<20}{yearly_population_totals[4]:<20}{yearly_population_totals[5]:<20}{yearly_population_totals[6]:<20}")
